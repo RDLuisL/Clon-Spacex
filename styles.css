@@ -3,6 +3,11 @@
 --bgc--form-container: white;
 --br-form-container: 10px;
 --secondary-color-font: #555;
+--third-color-font: #0099ff;
+--login-btn-color: rgb(114, 113, 113);
+--google-btn-color:  rgb(66,133,244);
+--facebook-btn-color: rgb(24,119,242);
+--twitter-btn-color: rgb(15,20,25);
 }
 
 body {
@@ -38,12 +43,143 @@ body {
     font-size: 2.5rem;
 }
 
-.form-container .login-container > p .form-container .login-container > span {
+.form-container .login-container > p.form-container .login-container > span {
     text-align: center;
     color: var(--secondary-color-font);
 }
 
+
 .form-container .login-container label {
     display: flex;
     font-weight: bold;
+    padding: 5px 0;
+}
+
+.form-container .login-container input.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+.form-container .login-container input.input:focus {
+    outline: solid 2px var(--third-color-font);
+}
+
+.form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container .login-container .options a{
+    color: var(--third-color-font);
+    text-decoration: none;
+}
+
+.form-container .login-container .options a:hover {
+    text-decoration: underline;
+}
+
+.form-container .login-container .providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn.btn-login {
+    background-color: var(--login-btn-color);
+    color: white;
+}
+
+.btn.btn-login:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+.btn.btn-google {
+    background-color: var(--google-btn-color);
+    color: white;
+}
+
+.btn.btn-google:hover {
+    background-color: rgb(28, 113, 250);
+}
+
+.btn.btn-facebook {
+    background-color: var(--facebook-btn-color);
+    color: white;
+}
+
+.btn.btn-facebook:hover {
+    background-color: rgb(7, 93, 206);
+}
+
+.btn.btn-twitter {
+    background-color: var(--twitter-btn-color);
+    color: white
+}
+.btn.btn-twitter:hover {
+    background-color: rgb(80, 84, 88);
+}
+
+.form-container .welcome-screen-container {
+    background-color: black;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative; /* Establece la posición relativa para que la imagen se ajuste a este div */
+    overflow: hidden;
+}
+
+
+.form-container .welcome-screen-container img {
+    position: absolute; /* Establece la posición absoluta para que la imagen se coloque encima del div */
+    width: 100%; /* Ancho automático para mantener la relación de aspecto original */
+    height: 100%; /* Altura al 100% para cubrir todo el contenido del div */
+    top: 50%; /* Coloca la imagen en la mitad superior del div */
+    left: 50%; /* Coloca la imagen en la mitad izquierda del div */
+    transform: translate(-50%, -50%); /* Centra la imagen tanto horizontal como verticalmente */
+    object-fit: cover;
+  }
+  
+@media screen and (max-width: 1357px) {
+    .form-container {
+        width: cover;
+    }
+
+    .form-container .login-container {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .form-container .welcome-screen-container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-container {
+        height: 70%;
+    }
+    .form-container .login-container {
+        width: 350px;
+    }
+
+    .form-container .welcome-screen-container {
+        display: none;
+    }
 }
