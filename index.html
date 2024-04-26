@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <div class="login-container">
+                <h2>
+                    Welcome
+                </h2>
+                <p>
+                   Select autentification method
+                </p>
+                <form action="">
+                    <p>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+                    </p>
+
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password">
+                    </p>
+
+                    <div class="options">
+                        <div>
+                            Remember me <input type="checkbox" name="rememberme" id="rememberme"/>
+                        </div>
+                        <div>
+                            <a href="#">I forgot my password</a>
+                        </div>
+                    </div>
+                    <p>
+                        <input type="submit" class="btn btn-login" value="Log in"/>
+                    </p>
+                    <div class="providers">
+                        <span>
+                            Choose another method to autenticate
+                        </span>
+                        <button class="bt btn-google">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" id="google"><g fill-rule="evenodd" color="#000" font-family="sans-serif" font-weight="400"><path fill="#d50707" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" d="M16.182 1022.861a13.458 13.458 0 0 0-7.686 2.268c-5.347 3.573-7.436 10.458-4.975 16.4 2.461 5.942 8.804 9.33 15.112 8.076 6.307-1.255 10.87-6.815 10.87-13.246h-.005v-1.5h-12v4h7.82a9.627 9.627 0 0 1-7.437 6.96 9.628 9.628 0 0 1-10.795-5.769 9.628 9.628 0 0 1 3.552-11.713 9.626 9.626 0 0 1 12.18 1.202l2.73-2.729a13.487 13.487 0 0 0-9.367-3.949z" overflow="visible" transform="translate(0 -1020.362)"></path><path fill="#1eb615" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" d="m6.8 1039.268-3.205 2.418c2.508 5.842 8.787 9.163 15.037 7.92a13.46 13.46 0 0 0 7.291-4.112l-3.021-2.416a9.628 9.628 0 0 1-16.102-3.81z" overflow="visible" transform="translate(0 -1020.362)"></path><path fill="#ffaf00" d="M4.991 1028.537c-2.624 3.703-3.287 8.605-1.47 12.992l.128.299c1.354-.782 2.354-1.468 3.307-2.116a9.625 9.625 0 0 1 1.068-8.79c-2.02-1.562-2.02-1.562-3.033-2.385z" overflow="visible" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" transform="translate(0 -1020.362)"></path><path fill="#0084ff" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" d="M17.498 1034.86v4h7.82a9.609 9.609 0 0 1-2.416 4.218l3.021 2.416a13.482 13.482 0 0 0 3.58-9.134h-.006v-1.5h-12z" overflow="visible" transform="translate(0 -1020.362)"></path><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" d="M16.188 1022.361a13.962 13.962 0 0 0-7.97 2.352c-5.543 3.704-7.711 10.847-5.16 17.008 2.552 6.16 9.133 9.676 15.672 8.375 6.54-1.301 11.274-7.069 11.274-13.737a.5.5 0 0 0-.006-.074v-1.425a.5.5 0 0 0-.5-.5h-12a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h7.072c-1.043 2.984-3.53 5.323-6.787 5.97a9.122 9.122 0 0 1-10.236-5.47 9.12 9.12 0 0 1 3.369-11.106 9.12 9.12 0 0 1 11.549 1.139.5.5 0 0 0 .707 0l2.73-2.729a.5.5 0 0 0 0-.707 13.99 13.99 0 0 0-9.66-4.091h-.008a.5.5 0 0 0-.045 0h-.002zm-.014 1c.365 0 .732.027 1.097.062 2.751.271 5.376 1.482 7.508 3.45l-2.023 2.021c-3.434-3.103-8.509-3.569-12.395-.973a10.136 10.136 0 0 0-3.738 12.32 10.137 10.137 0 0 0 11.356 6.069 10.13 10.13 0 0 0 7.822-7.322.5.5 0 0 0-.483-.63h-7.32v-3h11v1a.5.5 0 0 0 .002.028c-.013 6.183-4.398 11.522-10.465 12.728-6.076 1.209-12.182-2.054-14.553-7.777-2.37-5.723-.36-12.351 4.791-15.793a12.954 12.954 0 0 1 7.4-2.184z" overflow="visible" transform="translate(0 -1020.362)"></path><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" d="m5.309 1028.049-.631.775 3.029 2.469.63-.775-3.028-2.47zm17.914 14.59-.631.775 2.99 2.434.63-.776-2.99-2.433zm-16.643-3.612-3.346 2.506.6.801 3.346-2.506-.6-.8z" overflow="visible" transform="translate(0 -1020.362)"></path></g></svg>
+                            Google</button>
+                        <button class="bt btn-facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook"><path fill="#1976D2" d="M14 0H2C.897 0 0 .897 0 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z"></path><path fill="#FAFAFA" fill-rule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clip-rule="evenodd"></path></svg>
+                            Facebook</button>
+                        <button class="bt btn-twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter"><path fill="#03A9F4" d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z"></path></svg>
+                            Twitter</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="welcome-screen-container">
+                
+            </div>
+
+        </div>
+    </body>
+</html>
