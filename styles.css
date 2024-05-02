@@ -1,0 +1,32 @@
+body {
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  button {
+    position: absolute;
+    top: 10px;
+    left: 47vw;
+    border: 1px solid white;
+    color: white;
+    padding: 4px 10px;
+    background: black;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  svg {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #booms, #boomlines {
+    visibility: hidden;
+  }
+  
+  @media (max-width: 600px) {
+    svg {
+      max-height: 600px;
+    }
+  }
