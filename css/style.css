@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+:root {
+        --img-bg-principal: url("https://i0.wp.com/wallpapers.com/images/featured/coding-background-9izlympnd0ovmpli.jpg?ssl=1");
+        --bg-color-fondo: #1e2326;      
+}
+
+
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -11,12 +17,14 @@ html{
 }
 
 .ENFonts {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 15px;
 }
 
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: var(--bg-color-fondo);
     position: fixed;
     width: 100%;
     top: 0;
@@ -62,13 +70,16 @@ html{
 }
 /* SECCION I N I C I O */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), var(--img-bg-principal);
     background-size: cover;
     height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 .inicio .contenido-banner{
     padding: 20px;
@@ -82,9 +93,12 @@ html{
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
-    width: 80%;
+    width: 200px;
+    height: 200px;
     margin: auto;
     border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;
