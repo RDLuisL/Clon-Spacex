@@ -9,6 +9,11 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
+.ENFonts {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /* MENU */
 .contenedor-header{
     background: #1e2326;

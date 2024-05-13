@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <title>Luis Luna's Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
-            <div class="logo">
-                <a href="#">Nick</a>
+            <div class="logo" style="font-style: italic;">
+                <a href="#">Luis</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO/</a>
+                      <a class="ENFonts">START</a>
+                    </li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI/</a>
+                      <a class="ENFonts">ABOUT ME</a>
+                    </li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES/</a>
+                      <a class="ENFonts">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM/</a>
+                      <a class="ENFonts">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio/</a>
+                      <a class="ENFonts">PortfoliO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO/</a>
+                      <a class="ENFonts">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -37,13 +45,14 @@
             <div class="contenedor-img">
                 <img src="img/hero.png" alt="">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>Luis Luna</h1>
+            <h2>Desarrollador Fullstack || Ing. Mecánico</h2>
+            <h2 class="ENFonts">Fullstack Developer || Mechanical Eng.</h2>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/devengluisluna" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="#"><i class="fa-solid fa-rss"></i></a>
             </div>
         </div>
@@ -53,24 +62,23 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <p><span>Hola, soy Luis Luna.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
+                    <h3 class="ENFonts">Personal Info</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
-                            15-01-1980
-                        </li>
-                        <li>
                             <strong>Teléfono</strong>
+                            <br>
+                            <strong class="ENFonts">Phone Number</strong>
                             2555 5454545
                         </li>
                         <li>
                             <strong>Email</strong>
-                            cw@example.com
+                            <a style="text-decoration: none ; color: lightgray;"  href="dev.eng.luisluna@gmail.com">dev.eng.luisluna@gmail.com</a>
                         </li>
                         <li>
                             <strong>Website</strong>
@@ -78,17 +86,21 @@
                         </li>
                         <li>
                             <strong>Dirección</strong>
-                            123 San Luis, Argentina
+                            <br>
+                            <strong class="ENFonts">Adress</strong>
+                            Santiago de Chile, Chile
                         </li>
                         <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
+                            <strong>Disponibilidad</strong>
+                            <br>
+                            <strong class="ENFonts">Availability</strong>
+                            <span>IMMEDIATELY</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- intereses -->
-                <div class="col">
+                <!-- <div class="col">
                     <h3>Intereses</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
@@ -125,7 +137,7 @@
                         </div>
                         
                     </div>
-                </div>
+                </div> -->
             </div>
             <button>
                 Descargar CV <i class="fa-solid fa-download"></i>
