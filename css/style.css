@@ -1,5 +1,5 @@
 :root {
-    --bg-color: transparent;
+    --bg-color: #FED69F url('http://www.brainjar.com/dhtml/ouija/graphics/board.jpg') no-repeat;
     --bg-body: black;
     --ft-color: white;
 
@@ -10,83 +10,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--bg-color);
+    background: var(--bg-color)
+    background-size:cover;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
-    background: var(--bg-body);
-}
-
-img {
-    height: 300px;
-    width: 200px;
-}
-
-.container {
-    position: relative;
-    width: 140px;
-    height: 194px;
-    transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
-
-}
-
-.container:hover {
-    animation-play-state: paused;
-}
-
-
-
-
-@keyframes animate {
-    0%{
-        transform: perspective(1000px) rotateY(0deg);
+    .a {
+      width: 20%;
+      height: 200px;
+      position: absolute;
     }
-    100%{
-        transform: perspective(1000px) rotateY(360deg);
+    #curser{
+    position:absolute;
+      
     }
-}
-
-.container span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
-    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
-}
-
-
-
-.container span img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    border-radius: 15px;
-    border: 4px double rgb(0, 0, 0);
-}
-
-img:hover{
-    transform: translateY(-2px);
     
-}
-
-footer{
-    padding: 1em 0;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--ft-color);
-    font-style: italic;
-}
+    h1{
+      color: white;
+    }
