@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="contenedor">
-        <!-- ENCABEZADO PRINCIPAL: LOGO MENU CARRITO -->
         <header>
             <div class="logo-titulo">
                 <a href="index.html">
@@ -18,20 +17,17 @@
                 </a>
             </div>
             <nav id="nav">
-                <a href="index.html" class="selected">Inicio</a>
-                <a href="tienda.html">Tienda</a>
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html" class="selected">Tienda</a>
                 <a href="blog.html">Blog</a>
                 <a href="contacto.html">Contacto</a>
-                <!-- icono cerrar menu responsive -->
                 <span id="close-responsive">
                     <i class="fa-solid fa-xmark"></i>
                 </span>
             </nav>
-            <!-- icono menu responsive -->
             <div id="nav-responsive">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            
             <div class="carrito">
                 <span class="total-compra">$ 55,000.00</span>
                 <a href="carrito.html">
@@ -47,25 +43,23 @@
 
         <section class="contenedor-seccion">
             <div class="fondo-seccion"></div>
-            
-            <section id="inicio" class="inicio">
+            <div class="header-seccion">
                 <div class="col">
-                    <h2 class="titulo-inicio">Encuentra las zapatillas <br>
-                        que buscas al mejor precio</h2>
-                    <div class="buscador">
-                        <input type="text" placeholder="Qué estas buscando?">
-                        <span class="btn-buscar"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    </div>
-                   
+                    <strong><span class="link-blanco">Inicio</span> / Tienda</strong>
                 </div>
-                <div class="col derecha">
-                    <div class="contenedor-img">
-                        <img src="img/shoes5.png" alt="">
-                    </div>
+                <div class="centro">
+                    <h2>Shop</h2>
                 </div>
-            </section>
+                <div class="col busqueda">
+                    <strong>Resultados (1-6)</strong> 
+                    <select name="" id="">
+                        <option value="">Todos los productos</option>
+                        <option value="">Por precio</option>
+                        <option value="">Por modelo</option>
+                    </select>
+                </div>
+            </div>
 
-            <!-- PRODUCTOS -->
             <section id="productos" class="productos">
                 <div class="fila">
                     <div class="col fondo-dots">
@@ -78,7 +72,7 @@
                                 <div class="fondo orange">
                                     <div class="circulo"></div>
                                 </div>
-                                <img src="img/Air_Jordan_1_Mid.png" alt="">
+                                <img src="img/shoes1.png" alt="">
                                 <h2>Nike Air Max 270 to Chuck Taylors</h2>
                                 <h2>$20.000</h2>
                             </div>

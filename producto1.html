@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="contenedor">
-        <!-- ENCABEZADO PRINCIPAL: LOGO MENU CARRITO -->
         <header>
             <div class="logo-titulo">
                 <a href="index.html">
@@ -22,16 +21,13 @@
                 <a href="tienda.html">Tienda</a>
                 <a href="blog.html">Blog</a>
                 <a href="contacto.html">Contacto</a>
-                <!-- icono cerrar menu responsive -->
                 <span id="close-responsive">
                     <i class="fa-solid fa-xmark"></i>
                 </span>
             </nav>
-            <!-- icono menu responsive -->
             <div id="nav-responsive">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            
             <div class="carrito">
                 <span class="total-compra">$ 55,000.00</span>
                 <a href="carrito.html">
@@ -47,25 +43,69 @@
 
         <section class="contenedor-seccion">
             <div class="fondo-seccion"></div>
-            
-            <section id="inicio" class="inicio">
+            <div class="header-seccion">
                 <div class="col">
-                    <h2 class="titulo-inicio">Encuentra las zapatillas <br>
-                        que buscas al mejor precio</h2>
-                    <div class="buscador">
-                        <input type="text" placeholder="Qué estas buscando?">
-                        <span class="btn-buscar"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    </div>
-                   
+                    <strong><span class="link-blanco">Inicio</span> / Producto Detalle</strong>
                 </div>
-                <div class="col derecha">
-                    <div class="contenedor-img">
-                        <img src="img/shoes5.png" alt="">
+                <div class="centro">
+                    <h2>Detalle del Producto</h2>
+                </div>
+                <div class="col busqueda">
+                    <a href="producto2.html">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <section class="detalle-producto">
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Nike Air Max 270 to Chuck Taylors</h3>
+                        <p>Átate los cordones 100 % reciclados y empieza con buen pie en el running gracias a la suavidad de las Nike Air Max 270. </p>
+                        <div class="miniaturas">
+                            <img src="img/mini-shoes1.png" alt="" class="mini-selected" onclick="setMini('0')">
+                            <img src="img/mini-shoes2.png" alt="" onclick="setMini('1')">
+                            <img src="img/mini-shoes3.png" alt="" onclick="setMini('2')">
+                        </div>
+
+                    </div>
+                    <div class="col centro">
+                        <div class="img-producto" id="img-producto">
+                            <img src="img/shoes1.png" alt="" id="imgProducto">
+                            <h3 class="precio-producto">$20,000.00</h3>
+                        </div>
+                    </div>
+                    <div class="col derecha">
+                        <div class="info-detalle">
+                            Review:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            4.5 (60)
+                        </div>
+                        <div class="info-detalle">
+                            Color:
+                            <input type="radio" class="color1" checked name="color">
+                            <input type="radio" class="color2" name="color"> 
+                            <input type="radio" class="color3" name="color"> 
+                            <input type="radio" class="color4" name="color">  
+                        </div>
+                        <div class="info-detalle">
+                            Size:
+                            <button class="size-selected" onclick="setSize(0)">39</button>
+                            <button onclick="setSize(1)">40</button>
+                            <button onclick="setSize(2)">42</button>
+                        </div>
+
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </div>
             </section>
 
-            <!-- PRODUCTOS -->
+            <h2 class="subtitulo-seccion">Productos Relacionados</h2>
+            
             <section id="productos" class="productos">
                 <div class="fila">
                     <div class="col fondo-dots">
@@ -78,7 +118,7 @@
                                 <div class="fondo orange">
                                     <div class="circulo"></div>
                                 </div>
-                                <img src="img/Air_Jordan_1_Mid.png" alt="">
+                                <img src="img/shoes1.png" alt="">
                                 <h2>Nike Air Max 270 to Chuck Taylors</h2>
                                 <h2>$20.000</h2>
                             </div>
@@ -174,6 +214,7 @@
                     </div>
                 </div>
             </section>
+
         </section>
     </div>
 
