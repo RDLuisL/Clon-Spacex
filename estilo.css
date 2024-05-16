@@ -263,6 +263,9 @@ body{
 .productos .fila .col .contenido{
     cursor: pointer;
 }
+
+/* Rota el zapato 35° en el home  */
+
 .productos .fila .col .contenido:hover img{
     transform: rotate(35deg);
 }
